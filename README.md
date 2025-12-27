@@ -110,7 +110,7 @@ npm run dev
 
 ---
 
-## 📚 Learning Flow
+##  Learning Flow
 
 ### 1️⃣ Aim
 
@@ -161,7 +161,7 @@ Visual indicators highlight:
 
 ---
 
-## 📐 Physics Calculations
+##  Physics Calculations
 
 The project uses clear, syllabus-friendly formulas for:
 
@@ -176,7 +176,7 @@ These are intentionally written to be transparent and classroom-friendly.
 
 ---
 
-## 📊 Visualizations
+##  Visualizations
 
 ### Trajectory Animation
 
@@ -198,7 +198,7 @@ Graphs include labels, units, axes, and legends.
 
 ---
 
-## 🖥 UI / UX
+##  UI / UX
 
 - Clean, student-friendly layout
 - Sliders or text-based input fields
