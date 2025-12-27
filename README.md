@@ -29,27 +29,37 @@ Physics Launchpad aims to make kinematics concepts easier to understand:
 ---
 
 ## 📂 Project Structure
+
+## 📂 Project Structure
+
 physics-launchpad/
 ├── public/
-│ ├── placeholder.svg
-│ └── robots.txt
+│   ├── placeholder.svg
+│   └── robots.txt
+│
 ├── src/
-│ ├── components/
-│ │ ├── accordion.tsx
-│ │ ├── alert-dialog.tsx
-│ │ ├── alert.tsx
-│ │ ├── aspect-ratio.tsx
-│ │ └── Breadcrumbs/
-│ ├── hooks/ # Custom React hooks
-│ ├── lib/ # Utility functions & physics logic
-│ ├── pages/
-│ │ ├── App.tsx
-│ │ ├── index.css
-│ │ └── app.css
-│ └── physics/ # Core physics syllabus + motion equations
+│   ├── components/
+│   ├── hooks/
+│   ├── lib/
+│   ├── pages/
+│   │   ├── Index.tsx
+│   │   └── NotFound.tsx
+│   ├── physics/
+│   │   ├── syllabus/
+│   │   ├── constants.ts
+│   │   ├── equations.ts
+│   │   └── types.ts
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── vite-env.d.ts
+│
 ├── components.json
 ├── eslint.config.js
 ├── bun.lockb
+├── package.json
+├── tsconfig.json
 └── README.md
 
 ---
