@@ -1,133 +1,186 @@
-- Physics Launchpad
-A simple, educational, web-based Projectile Motion Virtual Lab built with TypeScript.
-Designed for Grade 11–12 physics students studying Kinematics, this project provides an interactive way to explore projectile motion concepts.
+#  Physics Launchpad
 
-- Project Goals
-Beginner-friendly codebase with clear TypeScript + React structure.
-No advanced mathematics — physics logic is transparent and syllabus-aligned.
+**Physics Launchpad** is an interactive, web-based **Projectile Motion Virtual Lab** built with **TypeScript + React**.  
+Designed for **Grade 11–12 physics students**, the project provides a clear, syllabus-aligned way to explore projectile motion concepts through prediction, simulation, and visual analysis.
 
-Helps students understand ideal projectile motion under assumptions:
-Uniform gravitational acceleration
-No air resistance or wind
-Motion in two dimensions (x–y plane)
-All values in SI units
+---
 
-- Tech Stack
-This project is built with:
-Vite
-TypeScript
-React
-shadcn-ui
-Tailwind CSS
+##  Purpose
 
-📂 Repo Structure
-Code
+Physics Launchpad aims to make kinematics concepts easier to understand:
+
+- Beginner-friendly TypeScript + React architecture  
+- Transparent, syllabus-level physics logic  
+- No air resistance, no wind  
+- Constant gravitational acceleration  
+- 2D motion in the x–y plane  
+- All values expressed in SI units  
+
+---
+
+## 🛠 Tech Stack
+
+- **Vite**
+- **TypeScript**  
+- **React**   
+- **shadcn/ui** 
+- **Tailwind CSS** 
+
+---
+
+## 📂 Project Structure
 physics-launchpad/
 ├── public/
-│   ├── placeholder.svg
-│   └── robots.txt
+│ ├── placeholder.svg
+│ └── robots.txt
 ├── src/
-│   ├── components/
-│   │   ├── accordion.tsx
-│   │   ├── alert-dialog.tsx
-│   │   ├── alert.tsx
-│   │   ├── aspect-ratio.tsx
-│   │   └── Breadcrumbs/
-│   ├── hooks/              # Custom React hooks
-│   ├── lib/                # Utility functions & physics logic
-│   ├── pages/
-│   │   ├── App.tsx
-│   │   ├── index.css
-│   │   └── app.css
-│   └── physics/            # Core physics syllabus + motion logic
+│ ├── components/
+│ │ ├── accordion.tsx
+│ │ ├── alert-dialog.tsx
+│ │ ├── alert.tsx
+│ │ ├── aspect-ratio.tsx
+│ │ └── Breadcrumbs/
+│ ├── hooks/ # Custom React hooks
+│ ├── lib/ # Utility functions & physics logic
+│ ├── pages/
+│ │ ├── App.tsx
+│ │ ├── index.css
+│ │ └── app.css
+│ └── physics/ # Core physics syllabus + motion equations
 ├── components.json
 ├── eslint.config.js
 ├── bun.lockb
 └── README.md
 
-- Getting Started
-Prerequisites
-Install Node.js  & npm (recommended via nvm).
+---
 
-Setup
-bash
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
+## Getting Started
 
-# Step 2: Navigate to the project directory
-cd <YOUR_PROJECT_NAME>
+### **Prerequisites**
+- Install **Node.js** and **npm** (recommended via `nvm`)
 
-# Step 3: Install dependencies
+### **Setup**
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/PramisKunwar/physics-launchpad
+
+# 2. Navigate to the project
+cd physics-launchpad
+
+# 3. Install dependencies
 npm install
 
-# Step 4: Start the development server
+# 4. Start the development server
 npm run dev
 
 
 📚 Learning Flow
 1️⃣ Aim
-Study projectile motion under uniform gravity and verify kinematic equations.
+
+Students explore projectile motion under uniform gravity and connect real-time simulations with theoretical kinematic equations.
 
 2️⃣ Predict
+
 Students input:
+
 Initial velocity (m/s)
-Launch angle (degrees)
+
+Launch angle (°)
+
 Gravitational acceleration (default: 9.8 m/s²)
 
 They predict:
+
 Time of flight
+
 Maximum height
+
 Horizontal range
 
-Predictions are stored for later comparison.
+Predictions are stored for later comparison with actual results.
 
 3️⃣ Simulate
-Interactive 2D canvas animation:
+
+A 2D animated simulation shows projectile motion using:
+
 Constant horizontal velocity
+
 Uniform vertical acceleration
-Motion via standard equations
+
+Standard kinematic equations
 
 Controls:
+
 ▶️ Play
+
 ⏸ Pause
+
 🔄 Reset
+
 4️⃣ Observe
 
-Displays:
-Calculated (actual) values
-Student predictions
-Differences between predicted and actual results
+The system displays:
 
-Highlights:
-Maximum height point
+Calculated (actual) values
+
+Student predictions
+
+Differences between prediction and outcome
+
+Visual indicators highlight:
+
+Maximum height
+
 Landing point
 
-- Physics Calculations
-Explicit kinematic equations for:
+📐 Physics Calculations
+
+The project uses clear, syllabus-friendly formulas for:
+
 Horizontal & vertical velocity components
+
 Time of flight
+
 Time to reach maximum height
+
 Maximum height
+
 Horizontal range
+
 Resultant velocity at any time
-Formulas are kept readable and syllabus-friendly.
 
-- Visualizations
-Trajectory: 2D animated projectile path (x–y plane)
+These are intentionally written to be transparent and classroom-friendly.
 
-- Graphs:
+📊 Visualizations
+Trajectory Animation
+
+2D x–y motion path
+
+Real-time updates based on kinematic equations
+
+Graphs
+
 Displacement–time
+
 Velocity–time
 
-- Reinforce key concepts:
-Velocity = gradient of displacement–time graph
-Acceleration = gradient of velocity–time graph
-Displacement = area under velocity–time graph
-Graphs include axes, units, legends, and labels.
+These help reinforce physics concepts:
 
-- User Interface
+Velocity = slope of displacement–time
+
+Acceleration = slope of velocity–time
+
+Area under velocity–time = displacement
+
+Graphs include labels, units, axes, and legends.
+
+🖥 UI / UX
+
 Clean, student-friendly layout
-Input fields or sliders
-Clear buttons
-Tooltips & explanations
-Logical flow: Aim → Predict → Simulate → Observe
+
+Sliders or text-based input fields
+
+Tooltips and contextual explanations
+
+Logical four-step flow: Aim → Predict → Simulate → Observe
