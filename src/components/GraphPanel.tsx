@@ -66,8 +66,8 @@ export const GraphPanel: React.FC<GraphPanelProps> = ({
           <Graph
             title="Displacement vs Time"
             lines={[
-              { data: displacementData.xData, color: '#3b82f6', label: 'x (horizontal)' },
-              { data: displacementData.yData, color: '#10b981', label: 'y (vertical)' },
+              { data: displacementData.xData, color: '#a48bc6', label: 'x (horizontal)' },
+              { data: displacementData.yData, color: '#7cc9a0', label: 'y (vertical)' },
             ]}
             xLabel="Time (s)"
             yLabel="Displacement (m)"
@@ -86,8 +86,8 @@ export const GraphPanel: React.FC<GraphPanelProps> = ({
           <Graph
             title="Velocity vs Time"
             lines={[
-              { data: velocityData.vxData, color: '#a855f7', label: 'vₓ (horizontal)' },
-              { data: velocityData.vyData, color: '#f59e0b', label: 'vᵧ (vertical)' },
+              { data: velocityData.vxData, color: '#f0a050', label: 'vₓ (horizontal)' },
+              { data: velocityData.vyData, color: '#e88a7a', label: 'vᵧ (vertical)' },
             ]}
             xLabel="Time (s)"
             yLabel="Velocity (m/s)"

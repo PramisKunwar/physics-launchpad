@@ -1,80 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Physics LaunchPad - Educational Lab Design System */
+/* Physics LaunchPad - Cute Pastel Design System */
 
 @layer base {
   :root {
-    /* Deep navy scientific background */
-    --background: 222 47% 11%;
-    --foreground: 210 40% 96%;
+    /* Pastel sky blue background */
+    --background: 204 100% 92%;
+    --foreground: 220 30% 25%;
 
-    /* Cards with subtle elevation */
-    --card: 222 41% 14%;
-    --card-foreground: 210 40% 96%;
+    /* White cards with soft shadows */
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 25%;
 
-    --popover: 222 41% 14%;
-    --popover-foreground: 210 40% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 25%;
 
-    /* Primary - Vibrant blue for actions */
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 47% 11%;
+    /* Primary - Lavender for buttons */
+    --primary: 260 60% 70%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Muted surface */
-    --secondary: 215 28% 20%;
-    --secondary-foreground: 210 40% 90%;
+    /* Secondary - Soft lilac surface */
+    --secondary: 260 40% 94%;
+    --secondary-foreground: 260 30% 35%;
 
     /* Muted elements */
-    --muted: 215 25% 22%;
-    --muted-foreground: 215 20% 60%;
+    --muted: 220 20% 90%;
+    --muted-foreground: 220 15% 50%;
 
-    /* Accent - Emerald for success/highlights */
-    --accent: 160 84% 39%;
-    --accent-foreground: 160 100% 98%;
+    /* Accent - Mint green */
+    --accent: 150 50% 70%;
+    --accent-foreground: 150 40% 20%;
 
-    /* Prediction color - Amber/orange */
-    --prediction: 38 92% 50%;
-    --prediction-foreground: 38 100% 10%;
+    /* Prediction color - Soft orange */
+    --prediction: 30 90% 65%;
+    --prediction-foreground: 30 80% 20%;
 
-    /* Trajectory color - Cyan */
-    --trajectory: 187 92% 50%;
-    --trajectory-foreground: 187 100% 10%;
+    /* Trajectory color - Coral pink (projectile) */
+    --trajectory: 10 80% 70%;
+    --trajectory-foreground: 10 60% 20%;
 
     /* Error/destructive */
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 100%;
 
     /* Borders and inputs */
-    --border: 215 28% 25%;
-    --input: 215 28% 25%;
-    --ring: 217 91% 60%;
+    --border: 220 20% 85%;
+    --input: 220 20% 88%;
+    --ring: 260 60% 70%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Graph colors */
-    --graph-x: 217 91% 60%;
-    --graph-y: 160 84% 45%;
-    --graph-vx: 280 85% 60%;
-    --graph-vy: 38 92% 55%;
-    --graph-grid: 215 20% 25%;
+    /* Graph colors - soft pastels */
+    --graph-x: 260 60% 70%;
+    --graph-y: 150 50% 55%;
+    --graph-vx: 30 90% 60%;
+    --graph-vy: 10 80% 65%;
+    --graph-grid: 220 15% 85%;
 
     /* Animation timing */
     --transition-fast: 150ms;
     --transition-normal: 250ms;
     --transition-slow: 400ms;
 
-    /* Sidebar - matching theme */
-    --sidebar-background: 222 41% 12%;
-    --sidebar-foreground: 210 40% 90%;
-    --sidebar-primary: 217 91% 60%;
-    --sidebar-primary-foreground: 222 47% 11%;
-    --sidebar-accent: 215 28% 20%;
-    --sidebar-accent-foreground: 210 40% 90%;
-    --sidebar-border: 215 28% 25%;
-    --sidebar-ring: 217 91% 60%;
+    /* Sidebar - matching pastel theme */
+    --sidebar-background: 260 40% 96%;
+    --sidebar-foreground: 220 30% 25%;
+    --sidebar-primary: 260 60% 70%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 50% 90%;
+    --sidebar-accent-foreground: 150 40% 25%;
+    --sidebar-border: 220 20% 85%;
+    --sidebar-ring: 260 60% 70%;
   }
 }
 
@@ -85,7 +85,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Nunito', system-ui, sans-serif;
   }
 
   /* Custom scrollbar */
@@ -100,26 +100,26 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: hsl(var(--border));
+    background: hsl(var(--primary) / 0.4);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--muted-foreground));
+    background: hsl(var(--primary) / 0.6);
   }
 }
 
 @layer components {
-  /* Section card styling */
+  /* Section card styling - glass morphism */
   .lab-section {
-    @apply bg-card rounded-xl border border-border p-6;
-    box-shadow: 0 4px 24px -4px hsl(222 47% 5% / 0.5);
+    @apply bg-card rounded-2xl border border-border p-6;
+    box-shadow: 0 4px 20px -4px hsl(220 40% 70% / 0.25);
   }
 
   /* Canvas styling */
   .simulation-canvas {
-    @apply rounded-lg border border-border;
-    background: linear-gradient(180deg, hsl(222 47% 8%) 0%, hsl(222 47% 11%) 100%);
+    @apply rounded-xl border-2 border-border;
+    box-shadow: 0 2px 12px hsl(220 40% 70% / 0.15);
   }
 
   /* Input field styling */
@@ -148,7 +148,7 @@
 
   /* Equation styling */
   .equation {
-    @apply bg-secondary/50 px-4 py-2 rounded-lg border border-border/50;
+    @apply bg-secondary/70 px-4 py-2 rounded-lg border border-border/50;
     font-family: 'JetBrains Mono', monospace;
   }
 
@@ -160,7 +160,7 @@
 
   /* Phase indicator badges */
   .phase-badge {
-    @apply px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider;
+    @apply px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
   }
 
   .phase-aim {
@@ -195,8 +195,8 @@
 
   /* Pulse glow for projectile */
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 8px hsl(var(--trajectory) / 0.6); }
-    50% { box-shadow: 0 0 20px hsl(var(--trajectory) / 0.9); }
+    0%, 100% { box-shadow: 0 0 8px hsl(var(--trajectory) / 0.4); }
+    50% { box-shadow: 0 0 20px hsl(var(--trajectory) / 0.7); }
   }
 
   .animate-pulse-glow {
